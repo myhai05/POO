@@ -26,9 +26,21 @@
             <textarea name="message" id="" cols="30" rows="10"></textarea>
         
         <p>
-             <button type="submit" >ENVOYER</button>
-             <button type="reset" >RESET</button>
+             <input type="submit" name="sub" value="ENVOYER">
         </p>
     </form>
+    <?php
+    include "process.php";
+    $db = new db();
+    if(isset($_POST["sub"])){
+       // var_dump($_POST);
+       $nom = $_POST['nom'];
+       $email = $_POST['email'];
+       $sujet = $_POST['sujet'];
+       $message = $_POST['message'];
+       $query = "INSERT INTO contact (nom, email, sujet,message) VALUES ('$nom','$email','$sujet','$message')";
+       $db->insert($query);
+    }
+    ?>
 </body>
 </html>

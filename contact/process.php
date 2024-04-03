@@ -8,7 +8,7 @@ class db{
     private $link;
 
     private function connect(){
-        $this -> link = new mysqli($this->host,$this->$user,$this->pass,$this->$db_name);//on ne peut pas accèder en dehors de la classe
+        $this -> link = new mysqli($this->host,$this->user,$this->pass,$this->db_name);//on ne peut pas accèder en dehors de la classe
     }
     public function __construct(){
         $this -> connect();
