@@ -1,0 +1,25 @@
+nav ul{
+    list-style-type: none;
+    background-color: rgb(136, 226, 226);
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+nav ul li{
+    float: left;
+    padding: 20px;
+}
+nav ul li a{
+    text-decoration: none;
+    display: block;
+    color: rgb(17, 17, 124);
+}
+h1{
+    clear: left;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+footer p{
+    font-size: 1.5em;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+}
